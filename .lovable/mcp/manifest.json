@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "sdk_version": "0.26.1",
+  "path": "/mcp",
+  "auth": {
+    "type": "oauth",
+    "issuer": "https://tomulqmwndynitrexihh.supabase.co/auth/v1",
+    "accepted_audiences": [
+      "authenticated"
+    ]
+  },
+  "mcp": {
+    "server": {
+      "name": "aviation-pathway-portal",
+      "version": "0.1.0",
+      "title": "Aviation Pathway Portal"
+    },
+    "tools": [
+      {
+        "name": "list_courses",
+        "title": "List courses",
+        "description": "List the published Pathway Pro aviation training programmes with fees and duration.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "search": {
+              "description": "Optional text to match against course titles.",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "verify_certificate",
+        "title": "Verify certificate",
+        "description": "Check whether a Pathway Pro graduation certificate number is valid.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "certificate_number": {
+              "type": "string",
+              "description": "The certificate number printed on the document."
+            }
+          },
+          "required": [
+            "certificate_number"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_my_applications",
+        "title": "List my applications",
+        "description": "List the signed-in applicant's admission applications and their statuses.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_my_application",
+        "title": "Get my application",
+        "description": "Fetch one of the signed-in applicant's applications, including uploaded document metadata.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "application_id": {
+              "type": "string",
+              "description": "The application id returned by list_my_applications."
+            }
+          },
+          "required": [
+            "application_id"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_my_payments",
+        "title": "List my payments",
+        "description": "List the signed-in applicant's fee payments and their statuses.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
