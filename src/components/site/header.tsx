@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/ppat-logo.png.asset.json";
 import { useQuery } from "@tanstack/react-query";
 
 import { Button } from "@/components/ui/button";
@@ -45,8 +44,8 @@ export function Header() {
 
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3">
         <Link to="/" className="flex items-center gap-2.5">
-          <img src="public/ppat-logo.png"
-            
+          <img
+            src="/ppat-logo.png"
             alt="Pathway Pro Aviation Training logo"
             className="size-12 object-contain"
             width={48}

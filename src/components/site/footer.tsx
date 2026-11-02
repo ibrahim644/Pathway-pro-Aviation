@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { Mail, Phone, MapPin } from "lucide-react";
-import logoAsset from "@/assets/ppat-logo.png.asset.json";
 
 import { settingsQuery, SETTINGS_FALLBACK, coursesQuery } from "@/lib/content";
 
@@ -16,7 +15,7 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2.5">
             <img
-              src="public/ppat-logo.png"
+              src="/ppat-logo.png"
               alt="Pathway Pro Aviation Training logo"
               className="size-11 rounded-md bg-background object-contain p-0.5"
               width={44}
