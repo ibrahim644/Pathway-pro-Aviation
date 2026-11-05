@@ -20,16 +20,16 @@ import { coursesQuery, newsQuery, naira, prettyDate } from "@/lib/content";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Pathway Pro Aviation Training — Pilot & Aviation School in Lagos" },
+      { title: "Pathway Pro Aviation Training — Pilot & Aviation School in Kano" },
       {
         name: "description",
         content:
-          "Train as a pilot, aircraft maintenance engineer, cabin crew or air traffic controller at Pathway Pro Aviation Training, Lagos. Apply online today.",
+          "Train as a pilot, aircraft maintenance engineer, cabin crew or air traffic controller at Pathway Pro Aviation Training, Kano. Apply online today.",
       },
-      { property: "og:title", content: "Pathway Pro Aviation Training — Pilot & Aviation School in Lagos" },
+      { property: "og:title", content: "Pathway Pro Aviation Training — Pilot & Aviation School in Kano" },
       {
         property: "og:description",
-        content: "Train as a pilot, aircraft maintenance engineer, cabin crew or air traffic controller at Pathway Pro Aviation Training, Lagos. Apply online today.",
+        content: "Train as a pilot, aircraft maintenance engineer, cabin crew or air traffic controller at Pathway Pro Aviation Training, Kano. Apply online today.",
       },
       { property: "og:url", content: "/" },
     ],

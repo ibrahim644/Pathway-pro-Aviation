@@ -17,11 +17,11 @@ import { submitContactMessage, contactSchema } from "@/lib/contact.functions";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — Pathway Pro Aviation Training, Lagos" },
+      { title: "Contact Us — Pathway Pro Aviation Training, Kano" },
       {
         name: "description",
         content:
-          "Call, email, WhatsApp or visit Pathway Pro Aviation Training at the General Aviation Terminal, Murtala Muhammed Airport, Lagos.",
+          "Call, email, WhatsApp or visit Pathway Pro Aviation Training at the General Aviation Terminal, Murtala Muhammed Airport, Kano.",
       },
       { property: "og:title", content: "Contact Pathway Pro Aviation Training" },
       { property: "og:description", content: "Phone, email, WhatsApp and directions to our campus." },

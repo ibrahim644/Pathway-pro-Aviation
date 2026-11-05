@@ -12,7 +12,7 @@ export const Route = createFileRoute("/news/")({
       {
         name: "description",
         content:
-          "Announcements, intake news, safety features and student stories from Pathway Pro Aviation Training in Lagos.",
+          "Announcements, intake news, safety features and student stories from Pathway Pro Aviation Training in Kano.",
       },
       { property: "og:title", content: "News & Blog — Pathway Pro" },
       { property: "og:description", content: "Announcements and stories from the airfield." },

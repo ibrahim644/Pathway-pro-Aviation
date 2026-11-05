@@ -383,8 +383,8 @@ INSERT INTO public.site_settings (key,value) VALUES
 ('phone','+234 800 000 0000'),
 ('whatsapp','2348000000000'),
 ('email','admissions@pathwaypro.aero'),
-('address','Hangar 4, General Aviation Terminal, Murtala Muhammed Airport, Ikeja, Lagos, Nigeria'),
-('map_embed','https://www.google.com/maps?q=Murtala%20Muhammed%20International%20Airport%20Lagos&output=embed'),
+('address','Hangar 4, General Aviation Terminal, Murtala Muhammed Airport, Ikeja, Kano, Nigeria'),
+('map_embed','https://www.google.com/maps?q=Murtala%20Muhammed%20International%20Airport%20Kano&output=embed'),
 ('office_hours','Monday – Friday, 8:00am – 5:00pm');
 
 INSERT INTO public.certificates (certificate_number,graduate_name,course_title,graduation_date,grade) VALUES

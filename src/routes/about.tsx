@@ -16,7 +16,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Pathway Pro Aviation Training" },
       {
         property: "og:description",
-        content: "Our mission, facilities and instructors at Pathway Pro Aviation Training, Lagos.",
+        content: "Our mission, facilities and instructors at Pathway Pro Aviation Training, Kano.",
       },
       { property: "og:url", content: "/about" },
     ],
